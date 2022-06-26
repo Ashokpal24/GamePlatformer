@@ -12,7 +12,6 @@ public class GamePanel extends JPanel {
     public void setvelocity(Float x,Float y){
         this.vel.x+=x;
         this.vel.y+=y;
-        repaint();
     }
     public void paintComponent(Graphics g){
         super.paintComponent(g);

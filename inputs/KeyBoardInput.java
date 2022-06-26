@@ -16,6 +16,7 @@ public class KeyBoardInput implements KeyListener {
         setVel();
     }
     public void setVel() {
+        //System.out.println(this.Direction.x+" "+this.Direction.y);
         gPanel.setvelocity(this.Direction.x*SPEED,this.Direction.y*SPEED);
     }
 
@@ -46,13 +47,13 @@ public class KeyBoardInput implements KeyListener {
                 Direction.y = 0.0f;
                 break;
             case KeyEvent.VK_A:
-                Direction.y = 0.0f;
+                Direction.x = 0.0f;
                 break;
             case KeyEvent.VK_S:
                 Direction.y = 0.0f;
                 break;
             case KeyEvent.VK_D:
-                Direction.y = 0.0f;
+                Direction.x = 0.0f;
                 break;
             default:
                 break;
