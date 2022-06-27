@@ -20,7 +20,7 @@ public class GamePanel extends JPanel {
         setMaximumSize(size);
         setPreferredSize(size);
     }
-    public void setvelocity(Float x,Float y){
+    public void setvelocity(float x,float y){
         this.vel.x+=x;
         this.vel.y+=y;
     }
@@ -36,6 +36,6 @@ public class GamePanel extends JPanel {
     public void paintComponent(Graphics g){
         super.paintComponent(g);
         subImg=img.getSubimage(1*32, 0, 32, 32);
-        g.drawImage(subImg,Math.round(this.vel.x),Math.round(this.vel.y),64, 64, null);
+        g.drawImage(subImg,(int)this.vel.x,(int)this.vel.y,64, 64, null);
     }
 }

@@ -9,7 +9,7 @@ import utils.Vector2d;
 public class KeyBoardInput implements KeyListener {
     private Vector2d Direction = new Vector2d(0.0f, 0.0f);
     private GamePanel gPanel;
-    private int SPEED=5;
+    private int SPEED=1;
     public KeyBoardInput(GamePanel gamePanel)
     {
         this.gPanel=gamePanel;
